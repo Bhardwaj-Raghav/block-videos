@@ -1,0 +1,17 @@
+{
+  "name": "Block Videos",
+  "version": "1.0.0",
+  "description": "Block All GODR Videos from Youtube",
+  "manifest_version": 3,
+  "author": "Raghav Bhardwaj",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Block Videos"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ]
+}
